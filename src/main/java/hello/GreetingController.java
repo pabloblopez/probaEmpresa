@@ -53,7 +53,7 @@ public class GreetingController {
             if (found && actor != null) {
                 if (null != actor.homeworld) {
                     urlTmp = actor.homeworld + "?format=json";
-                    System.out.println(urlTmp);
+                    //System.out.println(urlTmp);
                     planet = getPlanet(urlTmp);
                     actor.setPlanet_name(planet.getName());
                     //System.out.println("Atopado" + actor.getFilms() + ", " + actor.getVehicles() + ", " + actor.getStarships());
